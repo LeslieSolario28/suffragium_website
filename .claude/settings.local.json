@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "Bash(ls \"/Users/lesliediaz/repos/Aventro-pro /\")",
+      "Bash(cp \"/Users/lesliediaz/repos/Aventro-pro /assets/css/main.css\" \"/Users/lesliediaz/repos/Suffragium Website  Template/assets/css/main.css\")",
+      "Bash(cp \"/Users/lesliediaz/repos/Aventro-pro /index.html\" \"/Users/lesliediaz/repos/Suffragium Website  Template/index.html\")",
+      "Bash(cp \"/Users/lesliediaz/repos/Suffragium/assets/suffragium logo witio .svg\" \"/Users/lesliediaz/repos/Suffragium Website  Template/assets/img/suffragium-logo.svg\")",
+      "Bash(cp \"/Users/lesliediaz/repos/Suffragium/assets/Icon Suffrragium.svg\" \"/Users/lesliediaz/repos/Suffragium Website  Template/assets/img/suffragium-icon.svg\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cp \"/Users/lesliediaz/repos/Suffragium/assets/Icon Suffrragium.svg\" \"/Users/lesliediaz/repos/Suffragium Website  Template/assets/img/favicon.svg\")"
+    ]
+  }
+}
