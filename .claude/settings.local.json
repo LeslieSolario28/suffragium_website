@@ -9,7 +9,12 @@
       "Bash(cp \"/Users/lesliediaz/repos/Suffragium/assets/suffragium logo witio .svg\" \"/Users/lesliediaz/repos/Suffragium Website  Template/assets/img/suffragium-logo.svg\")",
       "Bash(cp \"/Users/lesliediaz/repos/Suffragium/assets/Icon Suffrragium.svg\" \"/Users/lesliediaz/repos/Suffragium Website  Template/assets/img/suffragium-icon.svg\")",
       "mcp__Claude_Preview__preview_start",
-      "Bash(cp \"/Users/lesliediaz/repos/Suffragium/assets/Icon Suffrragium.svg\" \"/Users/lesliediaz/repos/Suffragium Website  Template/assets/img/favicon.svg\")"
+      "Bash(cp \"/Users/lesliediaz/repos/Suffragium/assets/Icon Suffrragium.svg\" \"/Users/lesliediaz/repos/Suffragium Website  Template/assets/img/favicon.svg\")",
+      "mcp__visualize__read_me",
+      "mcp__visualize__show_widget",
+      "WebFetch(domain:www.bluepeople.com)",
+      "Bash(open /Users/lesliediaz/repos/suffragium_website/index.html)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

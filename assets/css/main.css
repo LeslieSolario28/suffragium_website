@@ -23,7 +23,7 @@
   --default-color: #d0dff5; /* Texto claro azulado */
   --heading-color: #e8f0fe; /* Headings */
   --accent-color: #00a8e8; /* Azul Suffragium */
-  --surface-color: #00296b; /* Navy profundo Suffragium */
+  --surface-color: #091e3a; /* Ligeramente más claro que el background */
   --contrast-color: #ffffff;
 }
 
@@ -40,15 +40,15 @@
 /* Color Presets */
 
 .light-background {
-  --background-color: #00296b;
-  --surface-color: #003380;
+  --background-color: #061529;
+  --surface-color: #091e3a;
 }
 
 .dark-background {
   --background-color: #010812;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #00296b;
+  --surface-color: #091e3a;
   --contrast-color: #ffffff;
 }
 
@@ -823,12 +823,24 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--background-color), transparent 20%) 0%, color-mix(in srgb, var(--background-color), transparent 10%) 100%);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--background-color), transparent 60%) 0%, color-mix(in srgb, var(--background-color), transparent 40%) 100%);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to bottom, transparent 0%, var(--background-color) 100%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .hero .container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   padding: 40px 15px;
 }
 
@@ -1272,6 +1284,37 @@ section,
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+.features {
+  position: relative;
+  overflow: hidden;
+}
+
+.features::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/backgroundimage.png");
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  opacity: 0.2;
+  z-index: 0;
+  mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    black 25%,
+    black 75%,
+    transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    black 25%,
+    black 75%,
+    transparent 100%);
+}
+
+.features .container {
+  position: relative;
+  z-index: 1;
+}
 .features .features-intro {
   padding-right: 40px;
 }
@@ -3713,4 +3756,72 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Technologies Section
+--------------------------------------------------------------*/
+.technologies .tech-ticker-wrap {
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.technologies .tech-ticker {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: tech-scroll 30s linear infinite;
+}
+
+.technologies .tech-ticker:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tech-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.technologies .tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  min-width: 110px;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.technologies .tech-item:hover {
+  transform: translateY(-4px);
+}
+
+.technologies .tech-icon-box {
+  width: 80px;
+  height: 80px;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 75%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: var(--accent-color);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.technologies .tech-item:hover .tech-icon-box {
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 40%);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.technologies .tech-item span {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--default-color);
+  white-space: nowrap;
 }
