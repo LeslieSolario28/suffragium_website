@@ -15,11 +15,12 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Manrope:wght@700;800&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
@@ -42,7 +43,7 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/suffragium-logo.svg" alt="Suffragium" style="height:136px;">
+        <img src="assets/img/suffragium-logo.svg" alt="Suffragium" style="height:177px;">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -73,8 +74,16 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content">
+
+              <div class="hero-watermark-outer">
+                <div class="hero-watermark-wrap" data-aos="fade" data-aos-duration="1000">
+                  <img src="assets/img/suffragium-icon.svg" alt="" class="hero-watermark">
+                  <div class="hero-watermark-shine"></div>
+                </div>
+              </div>
+
               <span class="hero-badge" data-aos="fade-right" data-aos-delay="300">Soluciones Innovadoras</span>
-              <h1 data-aos="fade-right" data-aos-delay="400">Transformación Digital a la Velocidad del Rayo</h1>
+              <h1 data-aos="fade-right" data-aos-delay="400"><span class="hero-accent">Soluciones digitales</span><br>diseñadas para escalar</h1>
               <p data-aos="fade-right" data-aos-delay="500">Impulsamos a las empresas a alcanzar mayor eficiencia y crecimiento en un entorno competitivo con soluciones tecnológicas de vanguardia.</p>
               <div class="hero-actions" data-aos="fade-right" data-aos-delay="600">
                 <a href="#contact" class="btn-primary"><i class="bi bi-rocket-takeoff"></i> Comienza tu viaje</a>
@@ -89,21 +98,21 @@
               <div class="row g-3">
                 <div class="col-6">
                   <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <i class="bi bi-shield-check"></i>
+                    <i class="ti ti-shield-check"></i>
                     <span>Seguro y confiable</span>
                   </div>
                   <div class="feature-card" data-aos="fade-up" data-aos-delay="700">
-                    <i class="bi bi-people"></i>
+                    <i class="ti ti-users-group"></i>
                     <span>Equipo experto</span>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                    <i class="bi bi-speedometer2"></i>
+                    <i class="ti ti-rocket"></i>
                     <span>Alto rendimiento</span>
                   </div>
                   <div class="feature-card" data-aos="fade-up" data-aos-delay="800">
-                    <i class="bi bi-award"></i>
+                    <i class="ti ti-trophy"></i>
                     <span>Resultados probados</span>
                   </div>
                 </div>
@@ -115,6 +124,52 @@
 
     </section><!-- /Hero Section -->
 
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nosotros</h2>
+        <p>Conoce quiénes somos y cómo trabajamos para transformar tu negocio</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center g-5 mb-5">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <img src="assets/img/about/about-21.webp" class="img-fluid rounded-3 about-image" alt="Nosotros">
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <h2 class="about-title gradient-text">Nuestro Propósito</h2>
+            <p class="lead">Transformar la manera en que las empresas operan mediante tecnología estratégica y soluciones digitales que generan impacto real.</p>
+            <p>Creemos que la verdadera transformación digital no se trata solo de adoptar tecnología, sino de reimaginar cómo trabajas, colaboras y escalas. Nuestro equipo de expertos se dedica a diseñar e implementar soluciones que no solo resuelven problemas actuales, sino que preparan tu negocio para las oportunidades del futuro.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-card">
+              <i class="ti ti-target-arrow"></i>
+              <h4>Nuestros principios</h4>
+              <p>Trabajamos con integridad, innovación y un compromiso genuino con los resultados de cada cliente en cada proyecto.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-card">
+              <i class="ti ti-timeline"></i>
+              <h4>Nuestra trayectoria</h4>
+              <p>Desde nuestra fundación hemos acompañado a empresas en su evolución digital con soluciones de alto impacto y resultados probados.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-card">
+              <i class="ti ti-code"></i>
+              <h4>Nuestro equipo</h4>
+              <p>Un equipo multidisciplinario con experiencia en estrategia, tecnología y transformación digital que impulsa tu crecimiento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -211,10 +266,10 @@
             <div class="features-intro">
               <div class="intro-badge">
                 <i class="bi bi-stars"></i>
-                <span>Capacidades Premium</span>
+                <span>Capacidades clave</span>
               </div>
-              <h2>Eleva tu Experiencia Digital</h2>
-              <p>Contamos con las herramientas, el talento y la experiencia para llevar tu empresa al siguiente nivel con tecnología de punta y un equipo comprometido con tus resultados.</p>
+              <h2>Tecnología que convierte <span class="gradient-text">operación en ventaja</span></h2>
+              <p>Diseñamos soluciones digitales que ayudan a las empresas a operar con mayor claridad, seguridad y velocidad. Integramos estrategia, software, datos y automatización para que la tecnología no solo funcione, sino que impulse mejores decisiones.</p>
 
             </div>
           </div>
@@ -225,63 +280,66 @@
               <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature-header">
                   <div class="feature-icon-wrapper">
-                    <i class="bi bi-lock-fill"></i>
+                    <i class="ti ti-shield-check"></i>
                   </div>
                   <div class="feature-meta">
-                    <h3>Protocolo de Seguridad Avanzado</h3>
+                    <h3>Seguridad inteligente</h3>
+                    <span class="feature-tag">Security</span>
                   </div>
                 </div>
-                <p>Protección de extremo a extremo con cifrado de nivel empresarial, monitoreo continuo y respuesta inmediata ante incidentes de seguridad.</p>
+                <p>Protegemos aplicaciones, datos e infraestructura con prácticas diseñadas para reducir riesgos, fortalecer la continuidad y responder con rapidez ante incidentes.</p>
               </div>
 
               <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature-header">
                   <div class="feature-icon-wrapper">
-                    <i class="bi bi-bezier2"></i>
+                    <i class="ti ti-robot"></i>
                   </div>
                   <div class="feature-meta">
-                    <h3>Flujos de Trabajo sin Fricciones</h3>
+                    <h3>Automatización operativa</h3>
+                    <span class="feature-tag">Automation</span>
                   </div>
                 </div>
-                <p>Automatizamos y optimizamos tus procesos operativos para que tu equipo se enfoque en lo que realmente importa: crecer.</p>
+                <p>Simplificamos procesos críticos mediante flujos digitales, integraciones y herramientas que reducen trabajo manual y aceleran la operación diaria.</p>
               </div>
 
               <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="feature-header">
                   <div class="feature-icon-wrapper">
-                    <i class="bi bi-droplet-half"></i>
+                    <i class="ti ti-chart-bar"></i>
                   </div>
                   <div class="feature-meta">
-                    <h3>Analítica en Tiempo Real</h3>
-                    <span class="feature-tag beta">Beta</span>
+                    <h3>Datos en acción</h3>
+                    <span class="feature-tag">Data</span>
                   </div>
                 </div>
-                <p>Dashboards interactivos con datos en vivo para tomar decisiones rápidas y basadas en evidencia, en cualquier momento y desde cualquier lugar.</p>
+                <p>Convertimos información dispersa en dashboards, indicadores y visualizaciones que permiten tomar decisiones más rápidas, claras y basadas en evidencia.</p>
               </div>
 
               <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                 <div class="feature-header">
                   <div class="feature-icon-wrapper">
-                    <i class="bi bi-rocket-takeoff"></i>
+                    <i class="ti ti-git-merge"></i>
                   </div>
                   <div class="feature-meta">
-                    <h3>Despliegue Rápido</h3>
-                    <span class="feature-tag upcoming">Próximamente</span>
+                    <h3>Implementación ágil</h3>
+                    <span class="feature-tag">Delivery</span>
                   </div>
                 </div>
-                <p>Lanzamos tu solución en tiempo récord con pipelines de CI/CD automatizados, pruebas continuas y entregas sin interrupciones.</p>
+                <p>Llevamos las ideas a producción con ciclos controlados, pruebas continuas y entregas incrementales que reducen fricción y aumentan velocidad.</p>
               </div>
 
               <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                 <div class="feature-header">
                   <div class="feature-icon-wrapper">
-                    <i class="bi bi-infinity"></i>
+                    <i class="ti ti-cloud-computing"></i>
                   </div>
                   <div class="feature-meta">
-                    <h3>Escalabilidad Infinita</h3>
+                    <h3>Arquitectura escalable</h3>
+                    <span class="feature-tag">Cloud</span>
                   </div>
                 </div>
-                <p>Arquitecturas diseñadas para crecer contigo. Desde startups hasta grandes empresas, nuestra infraestructura se adapta a tu ritmo.</p>
+                <p>Creamos bases tecnológicas preparadas para crecer: sistemas, nube, integraciones y datos diseñados para evolucionar con el negocio.</p>
               </div>
 
             </div>
@@ -301,7 +359,7 @@
           <div class="tabs-header" data-aos="fade-up" data-aos-delay="200">
             <ul class="nav nav-tabs">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tabs-tab-1">
+                <a class="nav-link active show tab-cyan" data-bs-toggle="tab" data-bs-target="#tabs-tab-1">
                   <div class="tab-content-preview">
                     <span class="tab-number">01</span>
                     <div class="tab-text">
@@ -312,7 +370,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-tab-2">
+                <a class="nav-link tab-orange" data-bs-toggle="tab" data-bs-target="#tabs-tab-2">
                   <div class="tab-content-preview">
                     <span class="tab-number">02</span>
                     <div class="tab-text">
@@ -323,7 +381,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-tab-3">
+                <a class="nav-link tab-coral" data-bs-toggle="tab" data-bs-target="#tabs-tab-3">
                   <div class="tab-content-preview">
                     <span class="tab-number">03</span>
                     <div class="tab-text">
@@ -334,7 +392,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-tab-4">
+                <a class="nav-link tab-techblue" data-bs-toggle="tab" data-bs-target="#tabs-tab-4">
                   <div class="tab-content-preview">
                     <span class="tab-number">04</span>
                     <div class="tab-text">
@@ -357,7 +415,7 @@
                       <i class="bi bi-lightbulb"></i>
                       <span>Centro de Innovación</span>
                     </div>
-                    <h3>Pensamiento de Diseño Revolucionario</h3>
+                    <h3>Pensamiento de <span class="gradient-text">Diseño Revolucionario</span></h3>
                     <p>Combinamos metodologías ágiles y pensamiento centrado en el usuario para crear soluciones digitales que transforman industrias y generan valor real para tu negocio.</p>
 
                     <div class="feature-points">
@@ -571,87 +629,53 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>¿Listo para Transformar tu Negocio?</h2>
-        <p>Conversemos sobre cómo podemos acelerar tu viaje digital</p>
-      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
-            <div class="quick-contact-wrapper">
-              <div class="contact-card">
-                <div class="icon-wrapper">
-                  <i class="bi bi-envelope-paper"></i>
-                </div>
-                <h4>Correo electrónico</h4>
-                <p class="contact-detail">hola@suffragium.net</p>
-                <span class="availability">Respondemos en menos de 2 horas</span>
+        <div class="row g-5">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="150">
+            <div class="contact-intro">
+              <div class="intro-badge">
+                <i class="bi bi-stars"></i>
+                <span>Comienza hoy</span>
               </div>
+              <h2>¿Listo para Transformar tu Negocio?</h2>
+              <p>Conversemos sobre cómo podemos acelerar tu viaje digital. Cuéntanos sobre tu proyecto y un especialista te contactará para explorar cómo podemos ayudarte a alcanzar tus objetivos.</p>
+            </div>
 
-
-              <div class="trust-indicators">
-                <div class="indicator-item">
-                  <div class="indicator-icon">
-                    <i class="bi bi-shield-check"></i>
-                  </div>
-                  <div class="indicator-text">
-                    <strong>100% Seguro</strong>
-                    <span>Tus datos están protegidos</span>
-                  </div>
-                </div>
-                <div class="indicator-item">
-                  <div class="indicator-icon">
-                    <i class="bi bi-clock-history"></i>
-                  </div>
-                  <div class="indicator-text">
-                    <strong>Respuesta rápida</strong>
-                    <span>Respondemos en horas</span>
-                  </div>
-                </div>
+            <div class="contact-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-envelope-paper"></i>
               </div>
+              <h4>Correo electrónico</h4>
+              <p class="contact-detail">hola@suffragium.net</p>
             </div>
           </div>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
             <div class="main-form-container">
-              <div class="form-intro">
-                <div class="intro-badge">
-                  <i class="bi bi-stars"></i>
-                  <span>Comienza hoy</span>
-                </div>
-                <h2>Envíanos un mensaje</h2>
-                <p>Cuéntanos sobre tu proyecto y un especialista te contactará para explorar cómo podemos ayudarte a alcanzar tus objetivos.</p>
-              </div>
-
               <form action="forms/contact.php" method="post" class="php-email-form modern-form">
-                <div class="row g-3">
-                  <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Nombre completo</label>
+                  <div class="input-icon-group">
+                    <i class="bi bi-person"></i>
                     <input type="text" class="form-control" name="name" placeholder="Nombre completo" required="">
                   </div>
-                  <div class="col-md-6">
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Correo electrónico</label>
+                  <div class="input-icon-group">
+                    <i class="bi bi-envelope"></i>
                     <input type="email" class="form-control" name="email" placeholder="Correo electrónico" required="">
                   </div>
                 </div>
 
-                <div class="row g-3 mt-1">
-                  <div class="col-md-6">
-                    <input type="text" class="form-control" name="phone" placeholder="Teléfono (opcional)">
+                <div class="mb-3">
+                  <label class="form-label">Mensaje</label>
+                  <div class="input-icon-group textarea-icon">
+                    <i class="bi bi-chat-left-text"></i>
+                    <textarea class="form-control" name="message" placeholder="Cuéntanos más sobre tus necesidades" rows="5" required=""></textarea>
                   </div>
-                  <div class="col-md-6">
-                    <select class="form-select" name="subject" required="">
-                      <option value="">Tipo de consulta</option>
-                      <option value="general">Consulta general</option>
-                      <option value="support">Soporte técnico</option>
-                      <option value="sales">Ventas</option>
-                      <option value="partnership">Alianzas</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="mt-3">
-                  <textarea class="form-control" name="message" placeholder="Cuéntanos más sobre tus necesidades" rows="6" required=""></textarea>
                 </div>
 
                 <div class="my-3">
@@ -672,69 +696,44 @@
       </div>
     </section><!-- /Contact Section -->
 
+    <!-- Closing CTA -->
+    <section id="closing-cta" class="closing-cta section">
+      <div class="container text-center" data-aos="fade-up">
+        <span class="cta-dash"></span>
+        <h2>Empecemos tu proyecto <span class="gradient-text">ahora</span></h2>
+        <p>¿Listo para transformar tu negocio con tecnología de vanguardia? Construyamos algo excepcional juntos.</p>
+        <a href="mailto:hola@suffragium.net" class="btn-primary">
+          Ponte en contacto
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </section><!-- /Closing CTA -->
+
   </main>
 
-  <footer id="footer" class="footer light-background">
+  <footer id="footer" class="footer footer-minimal light-background">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/suffragium-logo.svg" alt="Suffragium" style="height:60px;">
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Monterrey, Nuevo León, México</p>
-            <p class="mt-3"><strong>Correo:</strong> <span>hola@suffragium.net</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
+    <div class="container footer-row">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/suffragium-logo.svg" alt="Suffragium" style="height:40px;">
+      </a>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Enlaces útiles</h4>
-          <ul>
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#technologies">Tecnologías</a></li>
-            <li><a href="#features">Experiencia</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </div>
+      <nav class="footer-nav">
+        <a href="#hero">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#features">Tecnologías</a>
+        <a href="#tabs">Experiencia</a>
+        <a href="#contact">Contacto</a>
+      </nav>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nuestros servicios</h4>
-          <ul>
-            <li><a href="#">Transformación Digital</a></li>
-            <li><a href="#">Analítica Avanzada</a></li>
-            <li><a href="#">Desarrollo de Software</a></li>
-            <li><a href="#">Soluciones en la Nube</a></li>
-            <li><a href="#">Ciberseguridad</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="#">Términos de servicio</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Aviso de cookies</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Compañía</h4>
-          <ul>
-            <li><a href="#">Nosotros</a></li>
-          </ul>
-        </div>
-
+      <div class="social-links d-flex">
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
+    <div class="container copyright text-center">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Suffragium</strong> <span>Todos los derechos reservados</span></p>
     </div>
 
