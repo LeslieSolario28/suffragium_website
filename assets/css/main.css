@@ -964,37 +964,6 @@ section,
   }
 }
 
-.hero .hero-watermark-shine {
-  position: absolute;
-  inset: 0;
-  -webkit-mask-image: url("../img/suffragium-icon.svg");
-  mask-image: url("../img/suffragium-icon.svg");
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  background: linear-gradient(115deg, transparent 42%, rgba(255, 255, 255, 0.55) 50%, transparent 58%);
-  background-size: 320% 320%;
-  background-position: -160% -160%;
-  mix-blend-mode: screen;
-  animation: watermark-shine 5s ease-in-out infinite;
-}
-
-@keyframes watermark-shine {
-  0% {
-    background-position: -160% -160%;
-  }
-  16% {
-    background-position: 160% 160%;
-  }
-  100% {
-    background-position: 160% 160%;
-  }
-}
-
-
 .hero::after {
   content: "";
   position: absolute;
