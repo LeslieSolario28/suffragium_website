@@ -946,15 +946,15 @@ section,
 
 @media (min-width: 1441px) and (max-width: 1920px) {
   .hero .hero-watermark-outer {
-    transform: translate(calc(-50% - 150px), -50%);
+    transform: translate(calc(-50% - 70px), -50%);
     width: 200%;
   }
 }
 
 @media (min-width: 1921px) {
   .hero .hero-watermark-outer {
-    transform: translate(calc(-50% - 300px), -50%);
-    width: 270%;
+    transform: translate(calc(-50% - 100px), -50%);
+    width: 230%;
   }
 }
 
