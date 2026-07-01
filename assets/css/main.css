@@ -1509,6 +1509,86 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Technologies Section
+--------------------------------------------------------------*/
+.technologies {
+  overflow: hidden;
+}
+
+.technologies .tech-marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.technologies .tech-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: tech-scroll 28s linear infinite;
+}
+
+.technologies .tech-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tech-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.technologies .tech-card {
+  flex-shrink: 0;
+  width: 160px;
+  padding: 32px 20px;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.technologies .tech-card:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.technologies .tech-card i {
+  font-size: 34px;
+  background: linear-gradient(90deg, #F0A030 0%, #E85450 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.technologies .tech-card span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "SpaceGrotesk", sans-serif;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .technologies .tech-card {
+    width: 130px;
+    padding: 24px 16px;
+  }
+
+  .technologies .tech-card i {
+    font-size: 28px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
 .features {
