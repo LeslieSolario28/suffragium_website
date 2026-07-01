@@ -16,7 +16,10 @@
       "Bash(open /Users/lesliediaz/repos/suffragium_website/index.html)",
       "Bash(python3 -c ' *)",
       "WebFetch(domain:spd.tech)",
-      "Bash(awk 'NR==1,NR==0')"
+      "Bash(awk 'NR==1,NR==0')",
+      "Bash(python3 -)",
+      "Bash(curl -s -o /dev/null -w \"HTTP Status: %{http_code}\\\\n\" https://lesliesolario28.github.io/suffragium_website/)",
+      "Bash(curl -s https://lesliesolario28.github.io/suffragium_website/)"
     ]
   }
 }
